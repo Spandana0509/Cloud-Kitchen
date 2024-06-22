@@ -44,8 +44,7 @@
           "strategy": "JWT"
         }
       },
-      "kind": "xsuaa",
-      "API_PRODUCT_SRV__1_": {
+      "API_PRODUCT_SRV": {
         "kind": "odata-v2",
         "model": "srv/external/API_PRODUCT_SRV",
         "csrf": true,
@@ -56,10 +55,6 @@
             "path": "/sap/opu/odata/sap/API_PRODUCT_SRV"
           }
         }
-      },
-      "API_PRODUCT_SRV": {
-        "kind": "odata-v2",
-        "model": "srv/external/API_PRODUCT_SRV"
       }
     }
   },

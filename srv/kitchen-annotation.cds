@@ -1,6 +1,6 @@
 namespace com.spandana.nnrg;
 
-annotate com.sumanth.nnrg.kitchen with @(
+annotate com.spandana.nnrg.kitchen with @(
     UI.LineItem: [
         {
             $Type : 'UI.DataField',

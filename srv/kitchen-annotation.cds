@@ -35,7 +35,7 @@ annotate com.spandana.nnrg.kitchen with @(
 );
 
 
-annotate com.sumanth.nnrg.kitchen with @(       
+annotate com.spandana.nnrg.kitchen with @(       
     UI.FieldGroup #kitchenInformation : {
         $Type : 'UI.FieldGroupType',
         Data : [

@@ -8,9 +8,9 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
 
     return new ObjectPage(
         {
-            appId: 'com.spandana.nnrg.kitchen',
-            componentId: 'kitchenObjectPage',
-            contextPath: '/kitchen'
+            appId: 'com.spandana.nnrg.product',
+            componentId: 'A_ProductDescriptionObjectPage',
+            contextPath: '/A_Product/to_Description'
         },
         CustomPageDefinitions
     );

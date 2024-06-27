@@ -14,7 +14,7 @@
     }
   ],
   "attributes": [],
-  "role-templates": [  
+  "role-templates": [           
     {
       "name": "CloudKitchenAdmin",
       "description": "Role for Administration of CloudKitchen",

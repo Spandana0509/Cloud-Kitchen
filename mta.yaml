@@ -63,11 +63,11 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - comsumanthnnrgkitchen.zip
-      name: comsumanthnnrgkitchen
+      - comspandana.zip
+      name: comspandana
       target-path: resources/
 
-- name: comsumanthnnrgkitchen
+- name: comspandana
   type: html5
   path: app/kitchen
   build-parameters:

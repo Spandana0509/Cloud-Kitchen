@@ -1,24 +1,25 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Mon May 27 2024 13:38:23 GMT+0530 (India Standard Time)|
+|**Generation Date and Time**<br>Thu Jun 27 2024 10:57:25 GMT+0530 (India Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
-|**App Generator Version**<br>1.13.0|
+|**App Generator Version**<br>1.14.0|
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
-|**Service URL**<br>http://localhost:4004/odata/v4/nnrg/
-|**Module Name**<br>kitchen|
-|**Application Title**<br>kitchen details|
+|**Service URL**<br>http://localhost:4004/odata/v4/api-product-srv/
+|**Module Name**<br>product|
+|**Application Title**<br>product|
 |**Namespace**<br>com.spandana.nnrg|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.124.0|
+|**UI5 Version**<br>1.125.1|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
-|**Main Entity**<br>kitchen|
+|**Main Entity**<br>A_Product|
+|**Navigation Entity**<br>to_Description|
 
-## kitchen
+## product
 
 An SAP Fiori application.
 
@@ -26,7 +27,7 @@ An SAP Fiori application.
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply start your CAP project and navigate to the following location in your browser:
 
-http://localhost:4004/kitchen/webapp/index.html
+http://localhost:4004/product/webapp/index.html
 
 #### Pre-requisites:
 

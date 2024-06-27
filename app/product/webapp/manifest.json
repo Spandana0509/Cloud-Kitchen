@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "com.spandana.nnrg.kitchen",
+    "id": "com.spandana.nnrg.product",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,12 +12,12 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
-      "version": "1.13.0",
-      "toolsId": "a823fe0a-8f89-4c33-947a-e3232f48582e"
+      "version": "1.14.0",
+      "toolsId": "b246dc86-1da8-4c33-8127-964fbf1eaabd"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/nnrg/",
+        "uri": "/odata/v4/api-product-srv/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -45,7 +45,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.124.0",
+      "minUI5Version": "1.125.1",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -61,14 +61,13 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.spandana.nnrg.kitchen.i18n.i18n"
+          "bundleName": "com.spandana.nnrg.product.i18n.i18n"
         }
       },
       "": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {
-          "synchronizationMode": "None",
           "operationMode": "Server",
           "autoExpandSelect": true,
           "earlyRequests": true
@@ -87,42 +86,72 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "kitchenList",
-          "target": "kitchenList"
+          "name": "A_ProductList",
+          "target": "A_ProductList"
         },
         {
-          "pattern": "kitchen({key}):?query:",
-          "name": "kitchenObjectPage",
-          "target": "kitchenObjectPage"
+          "pattern": "A_Product({key}):?query:",
+          "name": "A_ProductObjectPage",
+          "target": "A_ProductObjectPage"
+        },
+        {
+          "pattern": "A_Product({key})/to_Description({key2}):?query:",
+          "name": "A_ProductDescriptionObjectPage",
+          "target": "A_ProductDescriptionObjectPage"
         }
       ],
       "targets": {
-        "kitchenList": {
+        "A_ProductList": {
           "type": "Component",
-          "id": "kitchenList",
+          "id": "A_ProductList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/kitchen",
+              "contextPath": "/A_Product",
               "variantManagement": "Page",
               "navigation": {
-                "kitchen": {
+                "A_Product": {
                   "detail": {
-                    "route": "kitchenObjectPage"
+                    "route": "A_ProductObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
                   }
                 }
               }
             }
           }
         },
-        "kitchenObjectPage": {
+        "A_ProductObjectPage": {
           "type": "Component",
-          "id": "kitchenObjectPage",
+          "id": "A_ProductObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/kitchen"
+              "contextPath": "/A_Product",
+              "navigation": {
+                "to_Description": {
+                  "detail": {
+                    "route": "A_ProductDescriptionObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "A_ProductDescriptionObjectPage": {
+          "type": "Component",
+          "id": "A_ProductDescriptionObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/A_Product/to_Description"
             }
           }
         }

@@ -1,7 +1,7 @@
 {
     "_version": "1.59.0",
     "sap.app": {
-        "id": "com.sumanth.nnrg.kitchen",
+        "id": "com.spandana.nnrg.kitchen",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -61,7 +61,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "com.sumanth.nnrg.kitchen.i18n.i18n"
+                    "bundleName": "com.spandana.nnrg.kitchen.i18n.i18n"
                 }
             },
             "": {

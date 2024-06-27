@@ -1,13 +1,13 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Jun 27 2024 10:57:25 GMT+0530 (India Standard Time)|
+|**Generation Date and Time**<br>Thu Jun 27 2024 15:18:37 GMT+0530 (India Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.14.0|
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
-|**Service URL**<br>http://localhost:4004/odata/v4/api-product-srv/
+|**Service URL**<br>http://localhost:4004/odata/v4/nnrg/
 |**Module Name**<br>product|
 |**Application Title**<br>product|
 |**Namespace**<br>com.spandana.nnrg|
@@ -16,8 +16,7 @@
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
-|**Main Entity**<br>A_Product|
-|**Navigation Entity**<br>to_Description|
+|**Main Entity**<br>ProductLocal|
 
 ## product
 

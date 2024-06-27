@@ -2,11 +2,10 @@ sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
         'com/spandana/nnrg/product/test/integration/FirstJourney',
-		'com/spandana/nnrg/product/test/integration/pages/A_ProductList',
-		'com/spandana/nnrg/product/test/integration/pages/A_ProductObjectPage',
-		'com/spandana/nnrg/product/test/integration/pages/A_ProductDescriptionObjectPage'
+		'com/spandana/nnrg/product/test/integration/pages/ProductLocalList',
+		'com/spandana/nnrg/product/test/integration/pages/ProductLocalObjectPage'
     ],
-    function(JourneyRunner, opaJourney, A_ProductList, A_ProductObjectPage, A_ProductDescriptionObjectPage) {
+    function(JourneyRunner, opaJourney, ProductLocalList, ProductLocalObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
@@ -17,9 +16,8 @@ sap.ui.require(
         JourneyRunner.run(
             {
                 pages: { 
-					onTheA_ProductList: A_ProductList,
-					onTheA_ProductObjectPage: A_ProductObjectPage,
-					onTheA_ProductDescriptionObjectPage: A_ProductDescriptionObjectPage
+					onTheProductLocalList: ProductLocalList,
+					onTheProductLocalObjectPage: ProductLocalObjectPage
                 }
             },
             opaJourney.run

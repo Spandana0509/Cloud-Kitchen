@@ -11,6 +11,7 @@ modules:
   - name: postgres
   - name: CloudKitchen-auth
   - name: CloudKitchen-dest
+  
   provides:
   - name: srv-api
     properties:
